@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>widzlle.id</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #f0f8ff; /* Light blue background */
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .navbar-custom {
+            background-color: #e0f7fa; /* Light cyan background */
+            padding: 0.5rem 2rem;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            margin-bottom: 10px;
+            border-radius: 5px;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+        }
+
+        .navbar-brand img {
+            max-height: 50px;
+        }
+
+        .navbar-title {
+            margin-left: 10px;
+            font-size: 1.5rem;
+            color: #00796b; /* Darker teal color */
+        }
+
+        .search-container {
+            position: relative;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            max-width: 800px;
+            margin-left: 20px;
+            margin-right: 20px;
+        }
+
+        .search-bar {
+            background-color: #ffffff;
+            border: 1px solid #00796b;
+            padding: 0.5rem 2rem;
+            border-radius: 5px;
+            width: 100%;
+            flex-grow: 1;
+        }
+
+        .search-icon {
+            position: absolute;
+            left: 10px;
+            font-size: 1.2rem;
+            color: #00796b;
+        }
+
+        .search-btn {
+            background-color: #00796b;
+            color: white;
+            border-radius: 5px;
+            padding: 0.5rem 1rem;
+            border: none;
+            margin-left: 10px;
+        }
+
+        .cart-icon {
+            font-size: 1.5rem;
+            color: #00796b;
+            margin-left: 10px;
+        }
+
+        .navbar-nav {
+            display: flex;
+            list-style: none;
+            padding-left: 0;
+            margin: 0;
+            justify-content: center;
+            width: 100%;
+        }
+
+        .navbar-nav .nav-item {
+            margin-right: 20px;
+        }
+
+        .navbar-nav .nav-link {
+            color: #00796b !important;
+            padding: 0.75rem 1rem;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #004d40;
+            color: #ffffff;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 1200px;
+            background-color: #ffffff;
+            margin-top: 20px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-title {
+            font-size: 2rem;
+            color: #00796b;
+            margin-bottom: 20px;
+        }
+
+        .product-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .product-card {
+            background-color: #e0f2f1;
+            border: 1px solid #00796b;
+            border-radius: 5px;
+            padding: 20px;
+            max-width: 300px;
+            text-align: center;
+        }
+
+        .product-card img {
+            width: 100%;
+            max-height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+
+        .product-card h3 {
+            color: #00796b;
+            margin-top: 10px;
+        }
+
+        .footer {
+            background-color: #00796b;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+            width: 100%;
+        }
+
+        @media (max-width: 768px) {
+            .search-container {
+                margin-left: 0;
+                margin-right: 0;
+            }
+
+            .product-container {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+    .style1 {margin-left: 10px; font-size: 36px; color: #00796b; font-weight: bold; }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom">
+        <!-- Brand Logo and Title -->
+        <a class="navbar-brand" href="#">
+            <img src="logo_widzlle.png" alt="Brand Logo">
+        </a>
+        <div class="style1">widzlle.id</div>
+
+        <!-- Search Bar with Icon -->
+        <div class="search-container">
+            <i class="bi bi-search search-icon"></i>
+            <input class="form-control search-bar" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn search-btn" type="submit">Search</button>
+            <a href="#" class="cart-icon">
+                <i class="bi bi-cart"></i>
+            </a>
+        </div>
+    </nav>
+
+    <!-- Navigation Links -->
+    <nav class="navbar navbar-expand-lg">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link active" href="#">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Layanan</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Produk</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Kontak</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Services Section -->
+        <h2 class="section-title">Layanan Kami</h2>
+        <div class="product-container">
+            <div class="product-card">
+                <img src="bikinlagu.png" alt="bikin lagu">
+                <h3>Jasa Bikin lagu</h3>
+                <p>Membuat lagu sesuai keinginan Anda.</p>
+            </div>
+            <div class="product-card">
+                <img src="bikinlagu.png" alt="Service 2">
+                <h3>Jasa Bikin Lagu</h3>
+                <p>Solusi aplikasi mobile untuk platform Android dan iOS.</p>
+            </div>
+            <div class="product-card">
+                <img src="bikinlagu.png" alt="Service 3">
+                <h3>Jasa Bikin Lagu</h3>
+                <p>Desain antarmuka dan pengalaman pengguna yang menarik.</p>
+            </div>
+        </div>
+
+        <!-- About Us Section -->
+    </div>
+    <!-- Footer -->
+    <div class="footer">
+        <p>&copy; 2024 widzlle.id. All rights reserved.</p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>

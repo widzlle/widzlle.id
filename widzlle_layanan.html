@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Widzlle.id - Services</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Arial, sans-serif';
+            background-color: #ffffff;
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+
+        .navbar-custom {
+            background-color: #e0f7fa;
+            padding: 0.5rem 1rem;
+            display: flex;
+            align-items: center;
+            border-bottom: 2px solid #00bcd4;
+            position: relative;
+            z-index: 10;
+        }
+
+        .navbar-brand img {
+            max-height: 50px;
+            margin-right: 10px;
+        }
+
+        .navbar-brand span {
+            font-size: 1.5rem;
+            color: #00796b;
+            font-weight: bold;
+        }
+
+        .navbar-nav .nav-link {
+            color: #00796b !important;
+            padding: 0.75rem 1rem;
+            transition: background-color 0.3s, color 0.3s;
+            border-radius: 5px;
+            text-decoration: none;
+        }
+
+        .navbar-nav .nav-link:hover {
+            background-color: #34548e9a;
+            color: #ffffff;
+        }
+
+        .header-image {
+            width: 100%;
+            max-height: 400px;
+            object-fit: cover;
+        }
+
+        .main-container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px; /* Add space between columns */
+        }
+
+        .col-md-4 {
+            flex: 1 1 calc(33.333% - 20px);
+            display: flex;
+        }
+
+        .service-item {
+            background-color: #e0f7fa;
+            border: 1px solid #00bcd4;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .service-item img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 15px;
+        }
+
+        .service-item h3 {
+            color: #00796b;
+            margin-top: 15px;
+            margin-bottom: 10px;
+            min-height: 60px;
+            text-align: center;
+        }
+
+        .service-item p {
+            font-size: 1rem;
+            line-height: 1.6;
+            color: #004d40;
+            margin-bottom: 10px;
+            flex-grow: 1;
+            text-align: center;
+        }
+
+        .service-item .price {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: #00796b;
+            margin-top: 10px;
+            text-align: center;
+        }
+
+        .additional-info {
+            flex: 1 1 100%;
+            background-color: #00796b;
+            color: #ffffff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .additional-info a {
+            color: #00796b;
+            text-decoration: none;
+            font-weight: bold;
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 20px;
+            background-color: #ffffff;
+            border-radius: 5px;
+        }
+
+
+
+        @media (max-width: 768px) {
+            .navbar-custom {
+                padding: 0.5rem;
+            }
+
+            .navbar-toggler-icon {
+                background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath fill='none' stroke='currentColor' stroke-width='2' d='M4 6h16M4 12h16M4 18h16'/%3E%3C/svg%3E");
+            }
+
+            .col-md-4 {
+                flex: 1 1 100%;
+            }
+
+            .service-item {
+                margin-bottom: 10px;
+            }
+        }
+
+        footer {
+            background-color: #00796b;
+            color: #ffffff;
+            padding: 20px 0;
+            text-align: center;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-custom navbar-expand-lg">
+        <!-- Brand Logo -->
+        <a class="navbar-brand" href="#">
+            <img src="logo_widzlle0.png" alt="Widzlle Logo">
+            <span>Widzlle.id</span>
+        </a>
+
+        <!-- Navbar Toggler for Mobile View -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Navbar Links -->
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link active" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widzlle_about.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widzlle_layanan.html">Service</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="widzlle_kontak.html">Order Now</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <div class="main-container">
+        <!-- Services Section -->
+        <div class="row">
+            <!-- Service Item 1 -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="pasfoto.png" alt="Service 1">
+                    <h3>Pasfoto Instan</h3>
+                    <p>Dapatkan pasfoto instan, berkualitas tinggi, yang siap memukau dalam hitungan menit. Cocok untuk keperluan resmi apa pun!
+                    </p>
+                    <div class="price">Mulai Rp 10.000</div>
+                </div>
+            </div>
+            <!-- Service Item 2 -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="slidepresentasi.png" alt="Service 2">
+                    <h3>Slide Presentasi</h3>
+                    <p>Presentasi Anda adalah cerminan profesionalisme. Biarkan kami membuatkan slide yang memukau dan meninggalkan kesan mendalam.
+                    </p>
+                    <div class="price">Mulai Rp 700</div>
+                </div>
+            </div>
+            <!-- Service Item 3 -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="fotobarengidol.png" alt="Service 3">
+                    <h3>Foto bareng Idol</h3>
+                    <p> Impian berfoto dengan idol? Kami wujudkan! Dapatkan foto yang tampak nyata seolah-olah kalian bertemu langsung.
+                    </p>
+                    <div class="price">Mulai Rp 17.000</div>
+                </div>
+            </div>
+            <!-- Service Item 4 -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="editbentuktubuh.png" alt="Service 4">
+                    <h3>Edit Bentuk Tubuh</h3>
+                    <p>Tampilkan versi terbaik dirimu di setiap foto. Kami edit bentuk tubuh dengan hasil alami dan sempurna.
+                    </p>
+                    <div class="price">Mulai Rp 5.000</div>
+                </div>
+            </div>
+            <!-- Service Item 5 -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="edit_baju.png" alt="Service 5">
+                    <h3>Ubah Baju</h3>
+                    <p>Ingin tampil beda tanpa repot? Ganti pakaian di foto dengan hasil yang tampak nyata dan stylish!
+                    </p>
+                    <div class="price">Mulai Rp 5.000</div>
+                </div>
+            </div>
+            <!-- Service Item 6 -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="bikinlagu.png" alt="Service 6">
+                    <h3>Bikin Lagu</h3>
+                    <p>Ingin memiliki lagu personal atau untuk acara khusus? Kami ciptakan lagu sesuai dengan kebutuhan dan selera Anda.
+                    </p>
+                    <div class="price">Mulai Rp 10.000</div>
+                </div>
+            </div>
+            <!-- Service Item 7 -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="feedig.png" alt="Service 7">
+                    <h3>Management Feed Instagram</h3>
+                    <p>Optimalkan feed Instagram Anda dengan desain dan konten yang menarik perhatian audiens dan membangun brand Anda.
+                    </p>
+                    <div class="price">Mulai Rp 2.000</div>
+                </div>
+            </div>
+            <!-- Service Item 8 -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="bikin _website.png" alt="Service 8">
+                    <h3>Pembuatan Website</h3>
+                    <p>Butuh website profesional? Kami bangun website sesuai kebutuhan Anda dengan desain menarik dan fungsional.
+                    </p>
+                    <div class="price">Mulai Rp 100.000</div>
+                </div>
+            </div>
+            <!-- Service Item 9 -->
+            <div class="col-md-4">
+                <div class="service-item">
+                    <img src="logo_widzlleid.png" alt="Service 9">
+                    <h3>Pembuatan Logo</h3>
+                    <p>Logo adalah identitas brand Anda. Dapatkan desain logo yang unik dan memukau untuk mencerminkan bisnis Anda.
+                    </p>
+                    <div class="price">Mulai Rp 10.000</div>
+                </div>
+            </div>
+        </div>
+        <!-- Additional Info Section -->
+        <div class="additional-info">
+            Masih banyak jasa yang belum tercantum di atas, tanyakan semua kebutuhanmu.
+            <br>
+        
+            <a href="https://wa.me/+6281225454171" target="_blank">Hubungi Kami</a>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Widzlle.id.</p>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
+
+
+
